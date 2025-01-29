@@ -30,3 +30,30 @@ document.body.style.backgroundColor = "blue";
 
 document.querySelector("button").style.backgroundColor = "green"
 
+
+CLASS LIST
+document.querySelector("button").classList.add("invisible");
+document.querySelector("button").classList.remove("invisible");
+document.querySelector("button").classList.toggle("invisible");
+
+document.querySelector("h1").classList.add("huge")
+
+Manipulate text in the DOM
+
+1. innerHTML & textContent
+2. innerHTML gives you HTML in between element tags.. if you add anything in the tags you will also get that also <strong>Hello</strong>
+will result in <strong>Hello</strong>
+3. textconent ONLY give you the content  will result in Hello not the strong tag
+
+
+Manipulate text in the attributes
+Everything inside a tag is attributes
+1. souce for an image, IDs, class2. 
+
+
+Get H! attributes
+EXAMPLE: document.querySelector("a").attributes;   ( I will get NamedNodeMap {0: href, href: href, length: 1}) in the console
+
+2. SET attributes
+You add the attribute you want to change and add the change after the comma, see below
+EXAMPLE: document.querySelector("a").Setattributes("href, "https://www.bing.com"); 
